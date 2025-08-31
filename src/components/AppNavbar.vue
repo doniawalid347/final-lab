@@ -1,7 +1,7 @@
 <template>
   <nav class="navbar navbar-expand-lg navbar-dark bg-secondary">
     <div class="container">
-      <router-link class="navbar-brand" to="/">MyShop</router-link>
+      <router-link class="navbar-brand" to="/">  🛍️ MyShop</router-link>
 
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
         <span class="navbar-toggler-icon"></span>

@@ -15,7 +15,7 @@ export default {
 
 <style scoped>
 .home-container {
-  background-color: #0d6efd; /* أزرق غامق Bootstrap primary */
+  background-color: #0d6efd; 
   border-radius: 10px;
   margin: 20px 0;
 }
