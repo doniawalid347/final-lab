@@ -1,45 +1,21 @@
-import { createRouter, createWebHistory } from 'vue-router';
-import HomeView from '../views/Home.vue';
-import ProductsView from '../views/Products.vue';
-import AboutView from '../views/About.vue';
-import CartView from '../views/Cart.vue';
-import ContactView from '../views/Contact.vue';
+import { createRouter, createWebHistory } from 'vue-router'
+import HomeView from '../views/HomeView.vue'
+import ProductsView from '../views/ProductsView.vue'
+import AboutView from '../views/AboutView.vue'
+import CartView from '../views/CartView.vue'
+import ContactView from '../views/ContactView.vue'
 
 const routes = [
-  {
-    path: '/',
-    name: 'Home',
-    component: HomeView
-  },
-  {
-    path: '/home',  // ممكن تخليه redirect بس
-    redirect: '/'   // أي حد يدخل /home يتحول للـ Home الافتراضي
-  },
-  {
-    path: '/products',
-    name: 'Products',
-    component: ProductsView
-  },
-  {
-    path: '/about',
-    name: 'About',
-    component: AboutView
-  },
-  {
-    path: '/cart',
-    name: 'Cart',
-    component: CartView
-  },
-  {
-    path: '/contact',
-    name: 'Contact',
-    component: ContactView
-  }
-];
+  { path: '/', name: 'Home', component: HomeView },
+  { path: '/products', name: 'Products', component: ProductsView },
+  { path: '/about', name: 'About', component: AboutView },
+  { path: '/cart', name: 'Cart', component: CartView },
+  { path: '/contact', name: 'Contact', component: ContactView },
+]
 
 const router = createRouter({
   history: createWebHistory(),
-  routes
-});
+  routes,
+})
 
-export default router;
+export default router
